@@ -1,6 +1,7 @@
 import React from 'react'
-import ReactDom from 'react-dom'
+import ReactDOM from 'react-dom'
 import App from './components/App'
 
+
 const quotes = document.querySelector('#quotes')
-ReactDom.render(<App />, quotes)
+ReactDOM.render(<App startingQuoteId={quotes.CDATA_SECTION_NODE.startingQuoteId}/>, quotes)
